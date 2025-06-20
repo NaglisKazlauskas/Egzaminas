@@ -1,101 +1,13 @@
-# Event Sharing Website
+Kaip paleisti
 
-This project is a web application designed for users to share and manage events. It consists of a client-side built with React and a server-side built with Node.js and Express, using a MySQL database for data storage.
+Pirma turėti programa kaip XAMPP, kad paleisti MySQL duomenų bažę
 
-## Project Structure
+Jeigu tavo Port yra skirtigas pakeisti jį server/config/db.js
 
-The project is organized into two main directories: `client` and `server`.
+Importuoti duomenų bazė su failu pateiktu server/config/cityevents.sql
 
-### Client
+Naudojant du terminalus reikia paleisti serverį ir frontenda
 
-The client-side of the application is built using React and Bootstrap. It includes the following components:
+naviguoti į Miesto_Renginiai/server, "npm install" instaliuoti reikalingus modulius ir paleisti su "npm start"
 
-- **AdminDashboard**: An interface for admin users to manage events.
-- **EventList**: Displays a list of events shared by users.
-- **UserLogin**: Allows users to log in to the website.
-
-#### Directory Structure
-
-```
-client
-├── public
-│   └── index.html
-├── src
-│   ├── components
-│   │   ├── AdminDashboard.jsx
-│   │   ├── EventList.jsx
-│   │   └── UserLogin.jsx
-│   ├── App.jsx
-│   ├── index.js
-│   └── styles
-│       └── bootstrap-custom.css
-├── package.json
-└── README.md
-```
-
-### Server
-
-The server-side of the application is built using Node.js and Express. It handles API requests related to event management.
-
-#### Directory Structure
-
-```
-server
-├── src
-│   ├── controllers
-│   │   └── eventsController.js
-│   ├── routes
-│   │   └── events.js
-│   ├── app.js
-│   └── config
-│       └── db.js
-├── package.json
-└── README.md
-```
-
-## Setup Instructions
-
-### Prerequisites
-
-- Node.js and npm installed
-- MySQL server running (using XAMPP)
-
-### Client Setup
-
-1. Navigate to the `client` directory.
-2. Install dependencies:
-   ```
-   npm install
-   ```
-3. Start the development server:
-   ```
-   npm start
-   ```
-
-### Server Setup
-
-1. Navigate to the `server` directory.
-2. Install dependencies:
-   ```
-   npm install
-   ```
-3. Start the server:
-   ```
-   node src/app.js
-   ```
-
-## Usage
-
-- Users can log in to the website using the UserLogin component.
-- Admin users can manage events through the AdminDashboard component.
-- All users can view the list of events using the EventList component.
-
-## Future Enhancements
-
-- Implement user authentication and authorization.
-- Set up the MySQL database and integrate it with the server.
-- Add features for users to create, update, and delete their events.
-
-## License
-
-This project is licensed under the MIT License.
+Kitu terminalu naviguoti į Miesto_Renginiai/client instaliuoti reikalingus modulius ir paleisti su "npm start"
